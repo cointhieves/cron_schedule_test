@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "${{ secrets.TEST_VAR }}"
+echo "$MY_ENV_VAR"
