@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$TEST_VAR"
+echo "${{ secrets.TEST_VAR }}"
