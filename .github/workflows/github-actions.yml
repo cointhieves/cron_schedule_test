@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '* */10 * * *'
 
 jobs:
   test_schedule:
@@ -8,5 +8,7 @@ jobs:
     steps:
       - name: Every time
         run: echo "This step will always run"
-      - name: Every time - Date
-        run: date
+      - name: List Dir
+        run: pwd
+      - name: Bash Script
+        run: bash ./script.sh
