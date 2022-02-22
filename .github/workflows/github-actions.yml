@@ -8,7 +8,14 @@ jobs:
     steps:
       - name: Every time
         run: echo "This step will always run"
+        
       - name: List Dir
         run: pwd
+        
       - name: Bash Script
+        run: bash ./script.sh
+
+      - name: Bash Script
+        env:
+          MY_ENV_VAR: ${{ secrets.MY_VAR }}
         run: bash ./script.sh
