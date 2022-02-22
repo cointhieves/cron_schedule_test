@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '* */10 * * *'
+    - cron: '* */5 * * *'
 
 jobs:
   test_schedule:
@@ -11,9 +11,6 @@ jobs:
         
       - name: List Dir
         run: pwd
-        
-      - name: Bash Script
-        run: bash ./script.sh
 
       - name: Bash Script
         env:
