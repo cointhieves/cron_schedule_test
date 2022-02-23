@@ -2,9 +2,12 @@
 #   schedule:
 #     - cron: '* */10 * * *'
 
+on: [push]
+
 jobs:
   test_schedule:
     runs-on: ubuntu-latest
+    container: rockylinux
     steps:
       - name: Every time
         run: echo "This step will always run"
